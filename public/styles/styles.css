@@ -1,0 +1,289 @@
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    font-size: 16px;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+main {
+    padding: 5rem;
+}
+
+article {
+    background-color: #fff;
+    margin-bottom: 2rem;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.author-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.author-link:hover {
+    text-decoration: underline;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+}
+
+.main-content{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    justify-content: center;
+}
+
+.footer_forms {
+    background-color: #333;
+    text-align: center;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    display: inline-block;
+    transform: translate(-50%, -100%);
+    color:white;
+    width: 100%;
+}
+
+.footer_main {
+    background-color: #333;
+    margin-top: auto;
+    width: 100%;
+    color: white;
+    text-align: center;
+    display: inline-block;
+    padding: 9px;
+}
+
+.articles_main {
+    min-height: 75vh;
+}
+
+.heading{
+    text-align: center;
+}
+
+.my-profile{
+    margin-right: 50px;
+    height: 100%;
+    flex-basis: 50%;
+}
+
+.profile{
+    display: flex;
+    align-items: center;
+
+    background-color: #ececec;
+    border-radius: 3px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20px;
+}
+
+.avatar{
+    min-width: 150px;
+    height: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-right: 35px;
+}
+
+.avatar__pic{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.nickname{
+    font-weight: bold;
+    font-size: 120%;
+    color: rgb(40, 50, 71);
+    margin-bottom: 15px;
+}
+
+.user-name{
+    white-space: nowrap;
+    font-size: 110%;
+    margin-bottom: 15px;
+}
+
+.phone{
+    display: block;
+    text-decoration: none;
+}
+
+.edit-profile{
+    flex-basis: 50%;
+}
+
+form {
+    padding-top: 5px;
+}
+
+.form{
+    background-color: #ececec;
+    border-radius: 3px;
+    border: 1px solid rgb(221, 221, 221);
+    padding: 20px;
+}
+
+.form__list{
+    margin: 0;
+    padding: 0;
+}
+
+.form__item{
+    list-style: none;
+    margin-bottom: 15px;
+    display: flex;
+}
+
+.form__item:last-child{
+    margin-bottom: 0;
+}
+
+.form__label{
+    display: block;
+    flex-basis: 30%;
+}
+
+.form__input{
+    flex-grow: 1;
+}
+
+.form__inline-label{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.form__inline-input{
+    margin-right: 10px;
+}
+
+.form__button{
+    margin: 0 auto;
+    padding: 2px 5px;
+}
+
+.form__title{
+    margin-right: 15px;
+}
+
+.error-text {
+    font-size: 12px;
+    color:#FF2D20;
+}
+
+.delete_button {
+    border-radius: 6px;
+    border: 1px solid #AF2324;
+    background-color: #FF2D20;
+    color: #ffffff;
+    padding: 0 10px;
+    height: 25px;
+    display: inline-block;
+}
+
+.restore_button {
+    border-radius: 6px;
+    border: 1px solid #1E5945;
+    background-color: #98FB98;
+    color: #ffffff;
+    padding: 0 10px;
+    height: 25px;
+    display: inline-block;
+}
+
+.form__textarea {
+    width: 100%;
+    height: 150px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: #f9f9f9;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+    resize: vertical;
+}
+
+.form__textarea:focus {
+    border-color: #66afe9;
+    outline: none;
+    box-shadow: 0 0 8px rgba(102, 175, 233, 0.6);
+}
+
+#experience_form{
+    display: none;
+}
+
+#experience_form p {
+    justify-content: left;
+    display: inline-block;
+}
+
+.disabled {
+    color: #66afe9;
+}
+
+.active {
+    color: #66afe9;
+}
+
+.pagination {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    padding: 0;
+}
+
+.pagination a, .pagination span {
+    display: block;
+    padding: 8px 16px; /* Внутренние отступы */
+    text-decoration: none; /* Убираем подчеркивание */
+    border: 1px solid #dee2e6; /* Граница */
+    background-color: #333;
+    border-radius: 4px; /* Скругленные углы */
+    transition: background-color 0.3s, color 0.3s; /* Плавный переход цвета фона и текста */
+}
+
+.nothing_here {
+    justify-content: center;
+    display: flex;
+}
