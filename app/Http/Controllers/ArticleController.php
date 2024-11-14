@@ -21,7 +21,7 @@ class ArticleController extends Controller
 
     public function userShow(User $user) {
         return view('articles.articles', [
-            'articles' => $user->articles
+            'articles' => $user->articles()->paginate(5)
         ]);
     }
 
