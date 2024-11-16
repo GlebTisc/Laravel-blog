@@ -5,7 +5,7 @@
                 <p>{{$article->text}}</p>
                 <p>Authors:
                     @foreach($article->users as $user)
-                        <a href="/author/{{$user->name}}" class="author-link">{{$user->name}}</a>
+                        <a href="/author/{{$user->nickname}}" class="author-link">{{$user->name}}</a>
                     @endforeach
                 </p>
                 <form action="/article/{{$article->id}}/erase" method="post">

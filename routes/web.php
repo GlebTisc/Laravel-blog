@@ -6,7 +6,7 @@ use \App\Http\Controllers\ProfileController;
 use \App\Http\Controllers\ExperienceController;
 
 Route::get('/', [ArticleController::class, 'index']);
-Route::get('/author/{user:name}', [ArticleController::class, 'userShow']);
+Route::get('/author/{user:nickname}', [ArticleController::class, 'userShow']);
 
 Route::get('/profile', [ProfileController::class, 'index'])->name('profile');
 Route::post('/profile', [ProfileController::class, 'store']);
